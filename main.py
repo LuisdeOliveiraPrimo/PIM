@@ -2,8 +2,6 @@ import json
 import os
 import re
 from datetime import datetime
-import statistics
-from collections import Counter
 
 # Arquivo JSON
 arquivo_json = "usuarios.json"
@@ -120,3 +118,5 @@ lista_usuarios.append(dados_usuario)
 # Salvar no arquivo
 with open(arquivo_json, "w", encoding="utf-8") as arquivo:
     json.dump(lista_usuarios, arquivo, indent=4, ensure_ascii=False)
+
+print("Cadastro realizado com sucesso!")
